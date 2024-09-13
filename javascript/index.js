@@ -83,8 +83,9 @@ function counters() {
     const [counts, setCounts] = useState(0);
     setCounts(counts + 1)
 }
+const clickables = document.getElementById("counter-area");
 const buttons = document.getElementById("counters-btn");
-buttons.addEventListener('click', function () {
+clickables.addEventListener('click', function () {
     counts++
     buttons.textContent = `${counts}`
 
@@ -111,11 +112,14 @@ function counter() {
     const [count, setCount] = useState(0);
     setCount(count + 1)
 }
+const clickable = document.getElementById("counter-area")
 const button = document.getElementById("counter-btn");
-button.addEventListener('click', function () {
+clickable.addEventListener('click', function () {
     count++
     button.textContent = `${count}`
     const sound = document.getElementById("sound")
+
+
 
     if (count === 33) {
         sound.play();
