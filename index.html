@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tasbah counter</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="top-bar">
+            <div class="top-bar-text">
+                <p>Tasbeeh Counter</p>
+            </div>
+
+        </div>
+
+        <div class="tasbeeh-method">
+            <div id="zehrah" class="zehrah selected" onclick="zehrah()"> <span>Tasbeeh Zahra(s)</span></div>
+            <div id="unlimited" class="unlimited" onclick="display_unlimited()"> <span>Unlimited Count</span></div>
+        </div>
+
+        <div class="counter-area">
+            <div class="counter-container">
+                <button id="counter-btn" onclick="counter()" type="button" class="counter">0
+                </button>
+                <button id="counters-btn" onclick="counters()" type="button" class="counters">0
+                </button>
+                <br>
+                <span id="arabic">الله اكبر</span>
+            </div>
+        </div>
+
+
+
+        <div id="functioncontainer" class="functioncontainer">
+            <div class="input-ctn">
+                <input pattern="[0-9]" id="sound_input" onclick="sound_input()" type="number" placeholder="0"
+                    inputmode="numeric">
+            </div>
+            <div class="btn-ctn">Beep <span style="font-size: 35px;">&#9737;</span></div>
+        </div>
+
+        <div class="function-btn">
+            <div class="minus-btn">
+                <button id="minus" type="button"><span style="font-size: 25px;">&#8861;</span>Minus 1</button>
+            </div>
+            <div class="reset-btn"><button id="reset-btn" type="button"><span
+                        style="font-size: 23px;">&#x27f3;</span>Reset</button>
+            </div>
+        </div>
+    </div>
+    <audio class="sound" id="sound" src="javascript/start.wav"></audio>
+
+
+    <script src="javascript/index.js">
+
+    </script>
+</body>
+
+</html>
